@@ -6,7 +6,7 @@
 }
 
 var kClosest = function(points, k) {
-    const result = points.map((x,i) => 
+    const result = points.map((x,i) =>  
                               {
         return {
         "index": i,
