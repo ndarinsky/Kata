@@ -3,7 +3,7 @@
  * @param {string} order
  * @return {boolean}
  */
-
+//https://leetcode.com/problems/verifying-an-alien-dictionary/
  function isSorted(word1, word2, order) {
     for (let i=0; i<word1.length; i++) {
         const index1 = order.indexOf(word1[i])
