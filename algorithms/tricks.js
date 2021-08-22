@@ -3,16 +3,14 @@
 console.log(2**3) //8
 console.log(3**3) //27
 
-// n div 2 => n>>1 
-// целочисленное деление
-console.log(5>>1) //2 
-console.log(5>>2) //1 
-console.log(8>>3) //3 
-console.log(16>>3) //16 div 8 
+
 
 // convert to binary
 const i = 5
 console.log(i.toString(2))
+
+// get base10 from binary
+parseInt("11000", 2) //24
 
 //stack
 const stack = []
