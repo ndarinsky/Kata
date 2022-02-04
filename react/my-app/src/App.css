@@ -1,0 +1,10 @@
+.container {
+  background-color: gray;
+  border: 1px black solid;
+  display: flex;
+}
+
+.resizable-panel {
+  width: 200px;
+  height: 200px;
+}

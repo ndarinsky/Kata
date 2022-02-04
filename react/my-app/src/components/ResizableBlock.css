@@ -1,0 +1,9 @@
+.block {
+    background-color: red;
+    border: 1px black solid;
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    align-content: center;
+    margin: 20px;
+}

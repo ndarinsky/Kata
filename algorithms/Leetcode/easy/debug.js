@@ -1,27 +1,42 @@
-const smallest_subarray_sum = function(s, arr) {
-    let left = 0
-    let right = 0
-    let sum = 0
-    let length = arr.length
-    while (right<=arr.length) {
-      if (sum<s) {
-        sum+=arr[right]
-        right++
-      } else if (sum===s){
-        length = Math.min(length, right-left)
-        sum+=arr[right]
-        right++
-        } else{
-        length = Math.min(length, right-left)
-        sum-=arr[left]
+const add = (hash, s) => {
+  if (s in hash) {
+    hash[s] = hash[s]+1
+  } else {
+    hash[s] = 1
+  }
+}
+
+const del = (hash, s) => {
+  if (s in hash) {
+    hash[s]--
+    if (hash[s]<1) {
+      delete hash[s]
+    }
+  } else {
+    delete hash[s]
+  }
+}
+
+const non_repeat_substring = function(str) {
+  const hash = {}
+  let left = 0
+
+  let max = 0
+  for (let r=0; r<str.length; r++) {
+    if (!(str[r] in hash)) {
+      add(hash, str[r])
+      max = Math.max(max, Object.keys(hash).length)
+    } else {
+      while (str[r] in hash) {
+        del(hash, str[left])
         left++
       }
-        
+      add(hash, str[r])
     }
+  }
 
-    console.log(length)
-    return length;
-  };
+  console.log(max)
+  return max
+};
 
-  smallest_subarray_sum(7, [2,1,5,2,3,2])
-  smallest_subarray_sum(7, [2,1,5,2,8])
+non_repeat_substring('aabccbb')

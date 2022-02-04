@@ -1,0 +1,25 @@
+.table {
+    border: 3x solid black;
+    table-layout: fixed;
+}
+
+.row {
+    background: red;
+}
+
+td, tr {
+    background: rgb(128, 77, 0);
+}
+
+.resize {
+    top: 0;
+    width: 4px;
+    background: red;
+    height: 20px;
+    padding: 0px;
+    position: absolute;
+
+    &:hover {
+      cursor: col-resize;
+    }
+  }
