@@ -49,7 +49,7 @@
       });
   }
   
-  demoGithubUser();
+  // demoGithubUser();
 
 //Solution:
   async function loadJsonAsync(url) {
@@ -61,10 +61,13 @@
       }
   }
 
+
+
   async function demoGithubUserAsync() {
-    const name = await prompt("Введите логин?", "iliakan");
+    let err = null
+    const name = 'dar'//await prompt("Введите логин?", "iliakan");
     try {
-        const user = await loadJson(`https://api.github.com/users/${name}`)
+        const user = await loadJsonAsync(`https://api.github.com/users/${name}`)
         alert(`Полное имя: ${user.name}.`);
         return user;
     } catch(e) {
@@ -77,4 +80,5 @@
     }
   }
 
-  demoGithubUser().catch(e => console.log(e))
+  // demoGithubUser().catch(e => console.log(e))
+  demoGithubUserAsync().catch(e => console.log(e))

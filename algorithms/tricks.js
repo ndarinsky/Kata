@@ -33,3 +33,6 @@ const arr = [
     {key: "cca", val: 1}]
 const res = arr.sort((a,b) => a.val - b.val) //-1,1,3
 console.log(res.map(el => el.val))
+
+//sliding window - если есть возрастающая функция на элементах.
+//когда массив отсортирован она всегда есть но иногда сорт не нужна поусловию

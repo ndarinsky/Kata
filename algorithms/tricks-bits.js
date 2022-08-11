@@ -14,5 +14,5 @@ let b = -3 // integers to be swapped
 a = a^b;   // Now a contains a^b
 b = a^b;   // Now b will have a
 a = a^b;   // Now a will have b
-console.log(a) 
-console.log(b) 
+console.log(a) //-3
+console.log(b) //1
