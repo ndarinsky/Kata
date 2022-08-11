@@ -1,4 +1,4 @@
-const Parent = ({ children, id, color }) => {
+const Parent = ({ children, id, color, offset }) => {
   return (
     <div
       id={id}
@@ -6,6 +6,7 @@ const Parent = ({ children, id, color }) => {
         border: "2px solid red",
         height: "400px",
         width: "650px",
+        marginLeft: offset,
         overflow: "hidden",
         position: "relative",
         backgroundColor: color

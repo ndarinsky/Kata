@@ -1,7 +1,7 @@
 import { Player } from "video-react";
 import "video-react/dist/video-react.css";
 
-const PlayerContainer = ({ children }) => {
+const PlayerContainer = () => {
   return (
     <div>
       <Player playsInline poster="https://video-react.js.org/assets/poster.png">
