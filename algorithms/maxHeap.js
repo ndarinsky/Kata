@@ -7,7 +7,7 @@ class Heap {
     }
 
     add(n) {
-        this.heap.push(n)
+        this.heap.push(n * (this.isMax ? 1 : -1))
         
         this.bubbleUp()
     }
@@ -45,7 +45,11 @@ class Heap {
         
         this.sinkDown()
 
-        return result
+        return result * (this.isMax ? 1 : -1)
+    }
+
+    showTop() {
+        return this.heap[0]* (this.isMax ? 1 : -1)
     }
 
     sinkDown() {
@@ -67,8 +71,13 @@ class Heap {
                     cur = right	
                 }
             } else {
-                this.swap(left, cur)
-                cur = left
+                if (swapLeft) {
+                    this.swap(left, cur)
+                    cur = left
+                } else {
+                    this.swap(right, cur)
+                    cur = right
+                }
             }
 
             left = cur*2 + 1				
@@ -80,13 +89,19 @@ class Heap {
 
 }
 
-const heap = new MaxHeap([4, 5, 8, 2])
-heap.add(3);   // return 4
-heap.add(5);   // return 5
-heap.add(10);  // return 5
-heap.add(9);   // return 8
-heap.add(4);
+const heap = new Heap( [6, 10, 1, 8, 10, 5, 8, 6, 2, 0, 4])
 
 while (heap.count() > 0) {
     console.log(heap.remove())
 }
+
+// const minHeap = new Heap([4, 5, 8, 2], false)
+// minHeap.add(3);   // return 4
+// minHeap.add(5);   // return 5
+// minHeap.add(10);  // return 5
+// minHeap.add(9);   // return 8
+// minHeap.add(4);
+
+// while (minHeap.count() > 0) {
+//     console.log(minHeap.remove())
+// }
