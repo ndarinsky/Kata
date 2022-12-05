@@ -14,7 +14,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\algorithms\\leetcode\\easy\\debug.js"
+            "program": "${workspaceFolder}\\algorithms\\maxHeap.js"
         }
     ]
 }

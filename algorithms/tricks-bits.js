@@ -2,7 +2,7 @@
 // целочисленное деление
 console.log(5>>1) //2 
 console.log(5>>2) //1 
-console.log(8>>2) //3 
+console.log(8>>2) //2 
 console.log(16>>3) //16 div 8 
 
 // n << 3 = n* 2*2*2 Умножить на степерь двойки
@@ -16,3 +16,4 @@ b = a^b;   // Now b will have a
 a = a^b;   // Now a will have b
 console.log(a) //-3
 console.log(b) //1
+

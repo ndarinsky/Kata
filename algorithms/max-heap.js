@@ -36,7 +36,6 @@ class MaxHeap {
         }
     }
 
-
     getMaxChildIndex(parent) {
         let left = 2*parent+1
         let right = 2*parent+2
