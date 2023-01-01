@@ -1,12 +1,12 @@
 //2 dimensional array 3x4
-//wrong:
+//WRONG:
 const arr1 = new Array(3).fill(new Array(4))
 console.log(arr1)
 arr1[0][1] = 'test'
 console.log(arr1) 
 //we created subarray and put refs on it in each row.
 
-//wrong:
+//WRONG:
 const arr2 = new Array(3).map(() => new Array(4))
 console.log(arr2)
 // arr2[0][1] = 'test' //TypeError: Cannot set properties of undefined (setting '1')
