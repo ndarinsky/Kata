@@ -1,3 +1,15 @@
+/**
+    parent=i -> child1 = 2i child2 = 2i+1
+    child=i -> parent = i >> 1
+
+    a) add: 
+        1) add to the very end(bottom of the heap)
+        2) bubleUp - compare with the parent, for max heap if parent<current -> switch them
+    b) remove:
+        1) return top element, switch it with max child.
+        2) sinkDown top element -> compare with children, swap with biggest child.
+ */
+
 class Heap {
 
 	constructor(nums, max = true) {

@@ -21,7 +21,6 @@ function showAvatar() {
         })).then(githubUser => alert(`Закончили показ ${githubUser.name}`));
 }
 
-
 //Solution:
 async function showAvatarAsync() {
     const response = fetch('/article/promise-chaining/user.json')

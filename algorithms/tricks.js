@@ -1,14 +1,4 @@
-//n ** m  =>  n ^ m
-//возведение в степень
-console.log(2**3) //8
-console.log(3**3) //27
 
-// convert to binary
-const i = 5
-console.log(i.toString(2))
-
-// get base10 from binary
-parseInt("11000", 2) //24
 
 //stack
 const stack = []

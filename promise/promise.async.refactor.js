@@ -21,15 +21,6 @@
         }
       })
   }
-
-  async function loadJsonAsync(url) {
-    const response = await fetch(url)
-    if (response.status == 200) {
-        return response.json();
-      } else {
-        throw new HttpError(response);
-      }
-  }
   
   function demoGithubUser() {
     let name = prompt("Введите логин?", "iliakan");
@@ -48,8 +39,6 @@
         }
       });
   }
-  
-  // demoGithubUser();
 
 //Solution:
   async function loadJsonAsync(url) {
@@ -60,8 +49,6 @@
         throw new HttpError(response);
       }
   }
-
-
 
   async function demoGithubUserAsync() {
     let err = null
