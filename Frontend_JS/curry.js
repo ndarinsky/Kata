@@ -1,4 +1,4 @@
-function curry1(func) {
+function curry(func) {
     return function curry(...args) {
       if (func.length <= args.length) { //func accepts less arg than curry
         return func.apply(this, args)
@@ -9,19 +9,6 @@ function curry1(func) {
       }
   
     } 
-  }
-
-
-  function curry(func) {
-    let res
-    return function(...args) {
-        if (res) {
-            res = func.apply(this, [res, ...args])
-        } else {
-            res = func.apply(this, args)
-        }   
-        return res     
-    }
   }
 
 //tests
