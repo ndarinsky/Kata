@@ -8,19 +8,18 @@ const scrollOptions = {
 const Paginator = ({ main, setMain, children }) => {
 
     const handlePrev = () => {
-        document.getElementById(`img-${main-1}`).scrollIntoView(scrollOptions);
-        // document.querySelector('.carousel-images').scrollTo({
-        //     left: main * 200,
-        //     behavior: 'smooth',
-        //   });
-        setMain(prev => (prev-1>=0) ? prev-1 : 9)
+
+        const nextIndex = main-1 > 0 ? main-1 : 9
+        document.getElementById(`img-0`).scrollIntoView(scrollOptions);
+
+        setMain(nextIndex)
     }
 
     const handleNext = () => {
+        const nextIndex = (main+1)%10
 
-
-        document.getElementById(`img-${main+1}`).scrollIntoView(scrollOptions);
-        setMain(prev => (prev+1)%10)
+        document.getElementById(`img-2`).scrollIntoView(scrollOptions);
+        setMain(nextIndex)
     }
     
     return <div className="carousel-paginator">

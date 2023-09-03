@@ -15,6 +15,8 @@ const Carousel = ({}) => {
     return images[index]
   })
 
+  console.log(main)
+
 /*Download images using async await syntax:*/
   useEffect(() => {
     (async () => {
