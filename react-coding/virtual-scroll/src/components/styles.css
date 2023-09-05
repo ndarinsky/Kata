@@ -8,18 +8,21 @@
 }
 
 .scrolled-container__list {
-    position: relative;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .item {
     height: 15px
 }
 
+.relat {
+    position: relative;
+}
+
 .topPlaceholder {
     display: block;
 }
-/* .anchor {
+.anchor {
     height: 5px;
     background-color: red;
-} */
+}
