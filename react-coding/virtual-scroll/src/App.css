@@ -38,3 +38,29 @@
     transform: rotate(360deg);
   }
 }
+
+
+.scrolled-container {
+  overflow: auto;
+  display: block;
+  width: 600px;
+  height: 400px;
+  border: 1px solid blue;
+  text-align: left;
+}
+
+.item {
+  height: 15px
+}
+
+.relative {
+  position: relative;
+}
+
+.topPlaceholder {
+  display: block;
+}
+.anchor {
+  height: 5px;
+  background-color: red;
+}
