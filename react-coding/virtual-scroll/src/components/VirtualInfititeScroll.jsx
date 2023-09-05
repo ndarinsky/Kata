@@ -1,8 +1,14 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 const LIMIT = 20
 const ITEM_HEIGHT = 10
 
+/**
+ * There is anchor at the bottom of the list.
+ * We observe it via intersection observer, and when anchor becom visible
+ * It means that we reached end of the list and we should fetch more data.
+ * We also change position of the visible window inside scrollable container, to preserve correct scroll position.
+ */
 const VirtualInfiniteScroll = ({children, currentIndex, posts, onBottomAnchor, onTopAnchor}) => {
   const topAnchor = useRef()
   const bottomAnchor = useRef()
