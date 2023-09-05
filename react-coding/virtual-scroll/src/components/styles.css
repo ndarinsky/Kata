@@ -8,9 +8,17 @@
 }
 
 .scrolled-container__list {
+    position: relative;
     border: 1px solid black;
 }
 
+.item {
+    height: 15px
+}
+
+.topPlaceholder {
+    display: block;
+}
 /* .anchor {
     height: 5px;
     background-color: red;
