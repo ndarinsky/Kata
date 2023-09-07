@@ -1,0 +1,19 @@
+.search-container {
+    width: 250px;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+}
+
+.search-input {
+    display: flex;
+    /* align-content: space-between; */
+    justify-content: space-between;
+}
+
+.suggestions {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    width: 100%;
+    /* row-gap: 5px; */
+}

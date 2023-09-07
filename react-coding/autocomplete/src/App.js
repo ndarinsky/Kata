@@ -1,14 +1,10 @@
-import logo from './logo.svg';
+import Autocomplete from './components/Autocomplete';
 import './App.css';
-
-import Table from './components/Table'
-import FlexTable from './components/FlexTable'
 
 function App() {
   return (
     <div className="App">
-      {/* <Table /> */}
-      <FlexTable />
+      <Autocomplete limit={100} />
     </div>
   );
 }
