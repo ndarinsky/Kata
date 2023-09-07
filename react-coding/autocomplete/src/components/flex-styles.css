@@ -1,0 +1,25 @@
+
+  
+  .container {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+  
+  .cell {
+    flex: 1;
+    display: flex;
+    /* width: 150px; */
+    height: 100%;
+    border: 1px solid gray;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,20 @@
+.table {
+    display: table;
+    max-height: 400px;
+    max-width: 400px;
+    /* width: 100vw; */
+    height: 100vh;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    border: 1px solid gray;
+    vertical-align: middle;
+    width: 300px;
+    height: 200px;
+
+}
